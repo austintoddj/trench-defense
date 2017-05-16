@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ABCFC47189D820800491A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC46189D820800491A00 /* Foundation.framework */; };
+		2ABCFC49189D820800491A00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC48189D820800491A00 /* CoreGraphics.framework */; };
+		2ABCFC4B189D820800491A00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC4A189D820800491A00 /* UIKit.framework */; };
+		2ABCFC51189D820800491A00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC4F189D820800491A00 /* InfoPlist.strings */; };
+		2ABCFC53189D820800491A00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCFC52189D820800491A00 /* main.m */; };
+		2ABCFC57189D820800491A00 /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCFC56189D820800491A00 /* TAAppDelegate.m */; };
+		2ABCFC5A189D820800491A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC58189D820800491A00 /* Main.storyboard */; };
+		2ABCFC5D189D820800491A00 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCFC5C189D820800491A00 /* TAViewController.m */; };
+		2ABCFC5F189D820800491A00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC5E189D820800491A00 /* Images.xcassets */; };
+		2ABCFC66189D820800491A00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC65189D820800491A00 /* XCTest.framework */; };
+		2ABCFC67189D820800491A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC46189D820800491A00 /* Foundation.framework */; };
+		2ABCFC68189D820800491A00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABCFC4A189D820800491A00 /* UIKit.framework */; };
+		2ABCFC70189D820800491A00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC6E189D820800491A00 /* InfoPlist.strings */; };
+		2ABCFC72189D820800491A00 /* Trench_DefenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCFC71189D820800491A00 /* Trench_DefenseTests.m */; };
+		2ABCFC84189D8FC900491A00 /* Tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC7B189D8FC900491A00 /* Tank.png */; };
+		2ABCFC85189D8FC900491A00 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC7C189D8FC900491A00 /* Map.png */; };
+		2ABCFC86189D8FC900491A00 /* Bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC7D189D8FC900491A00 /* Bullet.png */; };
+		2ABCFC87189D8FC900491A00 /* TowerUpper.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC7E189D8FC900491A00 /* TowerUpper.png */; };
+		2ABCFC88189D8FC900491A00 /* TowerLower.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC7F189D8FC900491A00 /* TowerLower.png */; };
+		2ABCFC89189D8FC900491A00 /* Main Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC80189D8FC900491A00 /* Main Menu.png */; };
+		2ABCFC8B189D8FC900491A00 /* DangerZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC82189D8FC900491A00 /* DangerZone.png */; };
+		2ABCFC8C189D8FC900491A00 /* TowerSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCFC83189D8FC900491A00 /* TowerSpace.png */; };
+		2ABCFC8F189D961C00491A00 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCFC8E189D961C00491A00 /* Game.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ABCFC69189D820800491A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ABCFC3B189D820700491A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABCFC42189D820700491A00;
+			remoteInfo = "Trench Defense";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ABCFC43189D820800491A00 /* Trench Defense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trench Defense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABCFC46189D820800491A00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2ABCFC48189D820800491A00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2ABCFC4A189D820800491A00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2ABCFC4E189D820800491A00 /* Trench Defense-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trench Defense-Info.plist"; sourceTree = "<group>"; };
+		2ABCFC50189D820800491A00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ABCFC52189D820800491A00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2ABCFC54189D820800491A00 /* Trench Defense-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trench Defense-Prefix.pch"; sourceTree = "<group>"; };
+		2ABCFC55189D820800491A00 /* TAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAppDelegate.h; sourceTree = "<group>"; };
+		2ABCFC56189D820800491A00 /* TAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAppDelegate.m; sourceTree = "<group>"; };
+		2ABCFC59189D820800491A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ABCFC5B189D820800491A00 /* TAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
+		2ABCFC5C189D820800491A00 /* TAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAViewController.m; sourceTree = "<group>"; };
+		2ABCFC5E189D820800491A00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2ABCFC64189D820800491A00 /* Trench DefenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trench DefenseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABCFC65189D820800491A00 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2ABCFC6D189D820800491A00 /* Trench DefenseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Trench DefenseTests-Info.plist"; sourceTree = "<group>"; };
+		2ABCFC6F189D820800491A00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2ABCFC71189D820800491A00 /* Trench_DefenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trench_DefenseTests.m; sourceTree = "<group>"; };
+		2ABCFC7B189D8FC900491A00 /* Tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tank.png; sourceTree = "<group>"; };
+		2ABCFC7C189D8FC900491A00 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		2ABCFC7D189D8FC900491A00 /* Bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet.png; sourceTree = "<group>"; };
+		2ABCFC7E189D8FC900491A00 /* TowerUpper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TowerUpper.png; sourceTree = "<group>"; };
+		2ABCFC7F189D8FC900491A00 /* TowerLower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TowerLower.png; sourceTree = "<group>"; };
+		2ABCFC80189D8FC900491A00 /* Main Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main Menu.png"; sourceTree = "<group>"; };
+		2ABCFC82189D8FC900491A00 /* DangerZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DangerZone.png; sourceTree = "<group>"; };
+		2ABCFC83189D8FC900491A00 /* TowerSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TowerSpace.png; sourceTree = "<group>"; };
+		2ABCFC8D189D961C00491A00 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		2ABCFC8E189D961C00491A00 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ABCFC40189D820700491A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC49189D820800491A00 /* CoreGraphics.framework in Frameworks */,
+				2ABCFC4B189D820800491A00 /* UIKit.framework in Frameworks */,
+				2ABCFC47189D820800491A00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABCFC61189D820800491A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC66189D820800491A00 /* XCTest.framework in Frameworks */,
+				2ABCFC68189D820800491A00 /* UIKit.framework in Frameworks */,
+				2ABCFC67189D820800491A00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ABCFC3A189D820700491A00 = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC4C189D820800491A00 /* Trench Defense */,
+				2ABCFC6B189D820800491A00 /* Trench DefenseTests */,
+				2ABCFC45189D820800491A00 /* Frameworks */,
+				2ABCFC44189D820800491A00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ABCFC44189D820800491A00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC43189D820800491A00 /* Trench Defense.app */,
+				2ABCFC64189D820800491A00 /* Trench DefenseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ABCFC45189D820800491A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC46189D820800491A00 /* Foundation.framework */,
+				2ABCFC48189D820800491A00 /* CoreGraphics.framework */,
+				2ABCFC4A189D820800491A00 /* UIKit.framework */,
+				2ABCFC65189D820800491A00 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ABCFC4C189D820800491A00 /* Trench Defense */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC55189D820800491A00 /* TAAppDelegate.h */,
+				2ABCFC56189D820800491A00 /* TAAppDelegate.m */,
+				2ABCFC58189D820800491A00 /* Main.storyboard */,
+				2ABCFC5B189D820800491A00 /* TAViewController.h */,
+				2ABCFC5C189D820800491A00 /* TAViewController.m */,
+				2ABCFC8D189D961C00491A00 /* Game.h */,
+				2ABCFC8E189D961C00491A00 /* Game.m */,
+				2ABCFC5E189D820800491A00 /* Images.xcassets */,
+				2ABCFC4D189D820800491A00 /* Supporting Files */,
+			);
+			path = "Trench Defense";
+			sourceTree = "<group>";
+		};
+		2ABCFC4D189D820800491A00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC7E189D8FC900491A00 /* TowerUpper.png */,
+				2ABCFC7F189D8FC900491A00 /* TowerLower.png */,
+				2ABCFC7B189D8FC900491A00 /* Tank.png */,
+				2ABCFC82189D8FC900491A00 /* DangerZone.png */,
+				2ABCFC7D189D8FC900491A00 /* Bullet.png */,
+				2ABCFC7C189D8FC900491A00 /* Map.png */,
+				2ABCFC80189D8FC900491A00 /* Main Menu.png */,
+				2ABCFC83189D8FC900491A00 /* TowerSpace.png */,
+				2ABCFC4E189D820800491A00 /* Trench Defense-Info.plist */,
+				2ABCFC4F189D820800491A00 /* InfoPlist.strings */,
+				2ABCFC52189D820800491A00 /* main.m */,
+				2ABCFC54189D820800491A00 /* Trench Defense-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ABCFC6B189D820800491A00 /* Trench DefenseTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC71189D820800491A00 /* Trench_DefenseTests.m */,
+				2ABCFC6C189D820800491A00 /* Supporting Files */,
+			);
+			path = "Trench DefenseTests";
+			sourceTree = "<group>";
+		};
+		2ABCFC6C189D820800491A00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCFC6D189D820800491A00 /* Trench DefenseTests-Info.plist */,
+				2ABCFC6E189D820800491A00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ABCFC42189D820700491A00 /* Trench Defense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABCFC75189D820800491A00 /* Build configuration list for PBXNativeTarget "Trench Defense" */;
+			buildPhases = (
+				2ABCFC3F189D820700491A00 /* Sources */,
+				2ABCFC40189D820700491A00 /* Frameworks */,
+				2ABCFC41189D820700491A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trench Defense";
+			productName = "Trench Defense";
+			productReference = 2ABCFC43189D820800491A00 /* Trench Defense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ABCFC63189D820800491A00 /* Trench DefenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABCFC78189D820800491A00 /* Build configuration list for PBXNativeTarget "Trench DefenseTests" */;
+			buildPhases = (
+				2ABCFC60189D820800491A00 /* Sources */,
+				2ABCFC61189D820800491A00 /* Frameworks */,
+				2ABCFC62189D820800491A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ABCFC6A189D820800491A00 /* PBXTargetDependency */,
+			);
+			name = "Trench DefenseTests";
+			productName = "Trench DefenseTests";
+			productReference = 2ABCFC64189D820800491A00 /* Trench DefenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ABCFC3B189D820700491A00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Todd Austin";
+				TargetAttributes = {
+					2ABCFC63189D820800491A00 = {
+						TestTargetID = 2ABCFC42189D820700491A00;
+					};
+				};
+			};
+			buildConfigurationList = 2ABCFC3E189D820700491A00 /* Build configuration list for PBXProject "Trench Defense" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ABCFC3A189D820700491A00;
+			productRefGroup = 2ABCFC44189D820800491A00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ABCFC42189D820700491A00 /* Trench Defense */,
+				2ABCFC63189D820800491A00 /* Trench DefenseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ABCFC41189D820700491A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC89189D8FC900491A00 /* Main Menu.png in Resources */,
+				2ABCFC87189D8FC900491A00 /* TowerUpper.png in Resources */,
+				2ABCFC8C189D8FC900491A00 /* TowerSpace.png in Resources */,
+				2ABCFC5F189D820800491A00 /* Images.xcassets in Resources */,
+				2ABCFC86189D8FC900491A00 /* Bullet.png in Resources */,
+				2ABCFC88189D8FC900491A00 /* TowerLower.png in Resources */,
+				2ABCFC84189D8FC900491A00 /* Tank.png in Resources */,
+				2ABCFC85189D8FC900491A00 /* Map.png in Resources */,
+				2ABCFC51189D820800491A00 /* InfoPlist.strings in Resources */,
+				2ABCFC5A189D820800491A00 /* Main.storyboard in Resources */,
+				2ABCFC8B189D8FC900491A00 /* DangerZone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABCFC62189D820800491A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC70189D820800491A00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ABCFC3F189D820700491A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC5D189D820800491A00 /* TAViewController.m in Sources */,
+				2ABCFC53189D820800491A00 /* main.m in Sources */,
+				2ABCFC57189D820800491A00 /* TAAppDelegate.m in Sources */,
+				2ABCFC8F189D961C00491A00 /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ABCFC60189D820800491A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABCFC72189D820800491A00 /* Trench_DefenseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ABCFC6A189D820800491A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ABCFC42189D820700491A00 /* Trench Defense */;
+			targetProxy = 2ABCFC69189D820800491A00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2ABCFC4F189D820800491A00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ABCFC50189D820800491A00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2ABCFC58189D820800491A00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ABCFC59189D820800491A00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2ABCFC6E189D820800491A00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ABCFC6F189D820800491A00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ABCFC73189D820800491A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2ABCFC74189D820800491A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ABCFC76189D820800491A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trench Defense/Trench Defense-Prefix.pch";
+				INFOPLIST_FILE = "Trench Defense/Trench Defense-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2ABCFC77189D820800491A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trench Defense/Trench Defense-Prefix.pch";
+				INFOPLIST_FILE = "Trench Defense/Trench Defense-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2ABCFC79189D820800491A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trench Defense.app/Trench Defense";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trench Defense/Trench Defense-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Trench DefenseTests/Trench DefenseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2ABCFC7A189D820800491A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Trench Defense.app/Trench Defense";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Trench Defense/Trench Defense-Prefix.pch";
+				INFOPLIST_FILE = "Trench DefenseTests/Trench DefenseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ABCFC3E189D820700491A00 /* Build configuration list for PBXProject "Trench Defense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABCFC73189D820800491A00 /* Debug */,
+				2ABCFC74189D820800491A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ABCFC75189D820800491A00 /* Build configuration list for PBXNativeTarget "Trench Defense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABCFC76189D820800491A00 /* Debug */,
+				2ABCFC77189D820800491A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ABCFC78189D820800491A00 /* Build configuration list for PBXNativeTarget "Trench DefenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABCFC79189D820800491A00 /* Debug */,
+				2ABCFC7A189D820800491A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ABCFC3B189D820700491A00 /* Project object */;
+}
